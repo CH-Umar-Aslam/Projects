@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+.nav-container {
+    height: 120px;
+    background-color: #262626;
+    color: white;
+    padding: 25px 35px;
+}
+
+.nav-container .row {
+    color: white;
+    margin-left: 20px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-right: 4%;
+}
+
+nav ul {
+    margin-left: 40px;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    width: 100%;
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+
+}
+
+nav .dribbble {
+    display: flex;
+    margin: 0 5px 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .fa-dribbble {
+    color: #ffaf29;
+    font-size: 20px;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #444444;
+    text-align: center;
+}
+
+nav .fa-dribbble:hover {
+    background-color: #fecd1a;
+    color: black;
+
+}
+
+.btn {
+    text-align: center;
+    width: 220px;
+    padding: 15px 50px;
+    border-radius: 10px;
+    background-color: #fecd1a;
+    border: none;
+    height: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #ffaf29;
+}
+
+
+label #bars,
+label #cancel {
+    color: #ffffff;
+    font-size: 30px;
+    float: right;
+    padding-right: 10%;
+    /* margin-left: 20px; */
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+    color: #ffffff;
+}
+
+
+
+
+
+/* Hero-Section */
+.small-container {
+    width: 100%;
+    background-color: #25262A;
+    padding-left: 10%;
+    padding-right: 12%;
+    overflow: hidden;
+
+}
+
+.small-container .row {
+    display: flex;
+    /* max-width: 100%; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    flex: 1;
+    min-width: 250px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.col-2>p {
+    padding-top: 100px;
+    color: #64f4ab;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.col-2 h2 {
+    font-size: 78px;
+    color: #ffffff;
+    line-height: 80px;
+    letter-spacing: 1.5px;
+    font-weight: 550;
+    margin-bottom: 10px;
+
+}
+
+.col-2 h1 {
+    font-size: 100px;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+
+}
+
+.col-2 .hero-logo {
+    padding-right: 10%;
+    /* padding-top: 93px;
+     */
+    padding-top: 160px;
+    max-width: 100%;
+
+}
+
+.col-2 .about-hero {
+    width: 90%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    line-height: 28px;
+}
+
+.col-2 .btn2 {
+    margin-top: 30px;
+}
+
+hr {
+    width: 1px;
+}
+
+/* skills section */
+
+.skills-container {
+    padding: 160px 35px 130px;
+    background-color: #2d2e32;
+}
+
+.sections-2 .top-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-sections .box .fas {
+    color: #64f4ab;
+}
+
+.skills-container .row .col {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+
+.skills-container .row .col .box {
+    width: 365px;
+    height: 370px;
+    border-radius: 40px;
+    background-color: #25262a;
+    padding: 55px 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.skills-container .row .col .box:hover {
+    background: linear-gradient(#64f4ab, #43a172);
+}
+
+.skills-container .row .col .fas:hover {
+    background: linear-gradient(#64f4ab, #316e50);
+    border: #50ffa7;
+
+}
+
+.row .col .box .fas {
+    color: #e8e8e8;
+    height: 102px;
+    width: 102px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #64f4ab;
+    background-color: #2d2e32;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+.row .col .box h2 {
+    font-size: 30px;
+    color: #e8e8e8;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 19px;
+}
+
+.row .col .box small {
+    font-size: 18px;
+    color: #e8e8e8;
+    text-align: center;
+    line-height: 33px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+    /* nav .row {
+        justify-content: space-between;
+
+    } */
+
+    .header-logo {
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 30%;
+    }
+
+    .nav-container {
+        justify-content: center;
+    }
+
+    nav .dribbble {
+        display: none;
+    }
+
+    .small-container {
+        padding-left: 4%;
+    }
+
+    .small-container .col-2 h1 {
+        font-size: 60px;
+    }
+
+    .col-2 .hero-logo {
+        padding-right: 0;
+        padding-top: 100px;
+    }
+
+
+
+    nav ul li a {
+        font-size: 17px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 822px) {
+
+
+
+    .small-container .col-2 h1 {
+        letter-spacing: normal;
+    }
+
+    .col-2 .hero-logo {
+        padding-top: 80px;
+    }
+
+    .col-2 .about-logo {
+        width: 90%;
+    }
+
+    label #bars {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #262626;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        margin-left: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        font-size: 22px;
+
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+    #check:checked~label #bars {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+    }
+}
